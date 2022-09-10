@@ -233,13 +233,13 @@
             </div><!--column left-->
             <div class="column rigth">
                 <div class="text">Mensagem</div>
-                <form method="POST" name="contact" netlify>
+                <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" placeholder="Nome" required>
+                            <input type="text" placeholder="Nome" name="name" required>
                         </div>
                         <div class="field email">
-                            <input type="email" placeholder="Email" required>
+                            <input type="email" placeholder="Email" name="email" required>
                         </div>
                     </div>
                     <div class="field">
